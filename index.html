@@ -1,0 +1,27 @@
+      <!DOCTYPE html>
+<html>
+<head>
+    <title>Distance to KPU Surrey Library</title>
+    <style>
+        #map { height: 400px; width: 100%; }
+        #distance-container { font-size: 18px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="distance-container">Distance to KPU Surrey Library: <span id="distance"></span> km</div>
+
+    <script>
+        // Function to display distance
+        function showDistance(distance) {
+            const distanceElement = document.getElementById("distance");
+            distanceElement.textContent = distance.toFixed(2);
+        }
+    </script>
+
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjypg8bfkCt4bVQg4zF40XBQhScqdmp9I&callback=initMap" async defer></script>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
